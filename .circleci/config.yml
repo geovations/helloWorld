@@ -22,7 +22,7 @@ jobs:
           command: "dotnet build"
       - run:
           name: "Test"
-          command: "dotnet test -o --logger trx"
+          command: "dotnet test --logger trx"
       - run:
           name: "test results"
           when: always
