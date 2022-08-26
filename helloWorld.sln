@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloWorldApiTest", "helloW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloWorldApiTests", "helloWorldApiTests\helloWorldApiTests.csproj", "{DE268FF8-5BC5-42A9-B22D-AD824671E2C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloWorldAcceptance", "helloWorldAcceptance\helloWorldAcceptance.csproj", "{39875717-62FF-4026-8D7E-747E7861E7EF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{DE268FF8-5BC5-42A9-B22D-AD824671E2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE268FF8-5BC5-42A9-B22D-AD824671E2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE268FF8-5BC5-42A9-B22D-AD824671E2C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39875717-62FF-4026-8D7E-747E7861E7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39875717-62FF-4026-8D7E-747E7861E7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39875717-62FF-4026-8D7E-747E7861E7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39875717-62FF-4026-8D7E-747E7861E7EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
