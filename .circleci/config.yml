@@ -22,7 +22,7 @@ jobs:
           command: "dotnet build"
       - run:
           name: "Test"
-          command: "dotnet test --results-directory /root/project/TestResults --logger trx --collect:'XPlat Test Coverage' "
+          command: "dotnet test --results-directory /root/project/TestResults --logger trx --collect:'XPlat Code Coverage' "
       - run:
           name: "test results"
           when: always
