@@ -32,6 +32,8 @@ jobs:
               trx2junit /root/project/TestResults/*.trx
       - store_test_results:
           path: /root/project/TestResults
+      - store_artifacts:
+          path: /root/project/TestResults
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
