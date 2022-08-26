@@ -22,7 +22,7 @@ jobs:
           command: "dotnet build"
       - run:
           name: "Test"
-          command: "dotnet test --output /root/project/TestResults --logger trx"
+          command: "dotnet test --results-directory /root/project/TestResults --logger trx"
       - run:
           name: "test results"
           when: always
