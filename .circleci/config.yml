@@ -22,17 +22,16 @@ jobs:
           command: "dotnet build"
       - run:
           name: "Test"
-          command: "dotnet test --logger trx"
+          command: "dotnet test --output /root/project/TestResults --logger trx"
       - run:
           name: "test results"
           when: always
           command: |
               dotnet tool install -g trx2junit
               export PATH="$PATH:/root/.dotnet/tools"
-              trx2junit /root/project/helloWorldApiTests/TestResults/*.trx
-              trx2junit /root/project/helloWorldApiTest/TestResults/*.trx
+              trx2junit /root/project/TestResults/*.trx
       - store_test_results:
-          path: ./TestResults
+          path: /root/project/TestResults
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
